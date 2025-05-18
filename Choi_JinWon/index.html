@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>회원가입</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="box">
+    <h1>회원가입</h1>
+    <form id="form">
+      <div class="input-group">
+        <input type="text" class="name-input" placeholder="이름" />
+        <p class="error-message">이름을 입력하세요.</p>
+      </div>
+
+      <div class="input-group">
+        <input type="email" class="email-input" placeholder="이메일" />
+        <p class="error-message">유효한 이메일을 입력하세요.</p>
+      </div>
+
+      <div class="input-group">
+        <div class="password-wrapper">
+          <input type="password" class="password-input" placeholder="비밀번호" />
+          <span class="toggle-password">보기</span>
+        </div>
+        <p class="error-message">비밀번호는 최소 6자입니다.</p>
+      </div>
+
+      <div class="input-group">
+        <div class="password-wrapper">
+          <input type="password" class="confirm-input" placeholder="비밀번호 확인" />
+          <span class="toggle-password">보기</span>
+        </div>
+        <p class="error-message">비밀번호가 일치하지 않습니다.</p>
+      </div>
+
+      <button type="submit" class="register">회원가입</button>
+      <button type="reset" class="reset">초기화</button>
+    </form>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

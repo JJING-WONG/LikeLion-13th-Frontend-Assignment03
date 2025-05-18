@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'CookieRun-Regular';
+    background-color: #ffffff;
+    margin: 0 auto;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+@media all and (min-width: 768px) { /*PC, 태블릿*/
+    html {
+        background-color: #f0f0f0
+    }
+
+    body {
+        width: 600px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .box {
+        width: 500px;
+        margin: 0 auto;
+        background: white;
+        padding: 30px;
+    }
+
+    .input-group {
+        margin-bottom: 20px;
+        text-align: left;
+        position: relative;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        outline: none;
+    }
+
+    .error-message {
+        color: red;
+        font-size: 12px;
+        margin-top: 5px;
+        display: none;
+    }
+    
+    .password-wrapper {
+        position: relative;
+    }
+
+    .toggle-password {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: blue;
+        cursor: pointer;
+        font-size: 12px;
+        user-select: none;
+    }
+
+    .register {
+        width: 200px;
+        height: 40px;
+        margin: 20px 5px;
+        padding: 0;
+        background-color: #788cf8;
+        border: 1px solid #788cf8;
+        font-size: 16px;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    .reset {
+        width: 200px;
+        height: 40px;
+        margin: 5px 5px 20px 5px;;
+        padding: 0;
+        background-color: #ff6449;
+        border: 1px solid #ff6449;
+        font-size: 16px;
+        color: #ffffff;
+        cursor: pointer;
+    }
+}
+
+@media all and (max-width: 767px) { /*스마트폰*/
+    .input-group {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .box {
+        padding: 30px 20px;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px 40px 12px 12px; 
+        font-size: 16px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .error-message {
+        color: red;
+        font-size: 12px;
+        margin-top: 5px;
+        display: none;
+    }
+
+    .password-wrapper {
+        position: relative;
+    }
+
+    .toggle-password {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: blue;
+        cursor: pointer;
+        font-size: 14px;
+        user-select: none;
+    }   
+
+
+
+    .register {
+        width: 360px;
+        height: 40px;
+        margin: 20px 5px;
+        padding: 0;
+        background-color: #788cf8;
+        border: 1px solid #788cf8;
+        border-radius: 4px;
+        font-size: 16px;
+        color: #ffffff;
+    }
+
+    .reset {
+        width: 360px;
+        height: 40px;
+        margin: 5px 5px 20px 5px;;
+        padding: 0;
+        background-color: #ff6449;
+        border: 1px solid #ff6449;
+        border-radius: 4px;
+        font-size: 16px;
+        color: #ffffff;
+    }
+}
